@@ -54,20 +54,20 @@ The website is fully responsive and optimized for desktop, tablet, and mobile de
 
 
 
-### 🖥️ Screenshot 1 – Home Page
-![Screenshot 1](screenshots/screenshot1.png)
+### 🖥️ Screenshot 1 – 
+![Screenshot 1](screenshot1.png)
 
-### 🏫 Screenshot 2 – About Section
-![Screenshot 2](screenshots/screenshot2.png)
+### 🏫 Screenshot 2 – 
+![Screenshot 2](screenshot2.png)
 
-### 📚 Screenshot 3 – courses Availble
-![Screenshot 3](screenshots/screenshot3.png)
+### 📚 Screenshot 3 – 
+![Screenshot 3](screenshot3.png)
 
-### 👩‍🏫 Screenshot 4 – Teachers Section
-![Screenshot 4](screenshots/screenshot4.png)
+### 👩‍🏫 Screenshot 4 – 
+![Screenshot 4](screenshot4.png)
 
-### 📞 Screenshot 5 – Contact Page
-![Screenshot 5](screenshots/screenshot5.png)
+### 📞 Screenshot 5 – 
+![Screenshot 5](screenshot5.png)
 
 ---
 
