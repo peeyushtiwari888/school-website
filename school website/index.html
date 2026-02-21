@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanskriti Playway English School</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  
+</head>
+<body>
+<!-- hero section -->
+  <header class="hero">
+    <img src="logo.jpg" alt="School Logo" class="school-logo">
+    <h1>✨ Sanskriti  School ✨</h1>
+    <p>Learning with Joy, Growing with Values</p>
+     <div class="nav-auth">
+  <button onclick="openLogin()"> 🔐Login/Register</button>
+</div>
+  </header>
+  <section id="login" class="login-section" style="display: none;">
+  <div class="login-container">
+    <h2>👩‍🏫 Parent / Teacher Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Enter Username" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+      <p id="loginMsg"></p>
+    </form>
+  </div>
+</section>
+
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#events">Events</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+
+  <!-- news strip -->
+  <div class="news-strip">
+  <marquee behavior="scroll" direction="left">
+    📢 Admission Open for 2025-2026 | Enroll Now at Sanskriti Playway English School | Limited Seats Available!| PTM on 10th Aug | Independence Day Celebrations Coming Soon!
+  </marquee>
+</div>
+
+<!-- events -->
+<section id="events" class="events-section">
+  <h2>📅 Upcoming Events</h2>
+  <ul class="event-list">
+    <li><strong>Aug 10:</strong> PTM & Student Progress Review</li>
+    <li><strong>Aug 15:</strong> Independence Day Celebration</li>
+    <li><strong>Sep 5:</strong> Teacher’s Day Function</li>
+  </ul>
+</section>
+
+
+<!-- Banner Section -->
+<section class="banner">
+  <img src="https://media.licdn.com/dms/image/v2/C5612AQGDzNr8Vzxt-w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1603040292067?e=2147483647&v=beta&t=eEL0RR2GJV-Q2q1oMG-9dE_-lMdYU3NhbquLsEiI0n0" alt="School Banner" class="banner-image">
+</section>
+
+<section id="welcome-audio" class="audio-section">
+  <h2>🎧 Welcome Message from the Principal</h2>
+  <audio controls>
+    <source src="ttsmaker-file-2025-8-3-18-13-22.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<!-- about-section -->
+  <section class="about-section">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Sanskriti Playway English School</strong>, where education meets imagination. 
+      Our mission is to nurture young minds with love, care, and creativity. 
+      We focus on developing the overall personality of children through playful learning and strong moral values.
+    </p>
+    <p>
+      Our experienced teachers, joyful environment, and engaging activities make learning a fun and exciting journey.
+      We aim to build a strong foundation that helps every child grow into a confident and curious learner.
+    </p>
+  </div>
+
+
+
+<!-- student-gallery -->
+
+  <div class="student-gallery">
+    <div class="student-card">
+      <img src="https://www.shutterstock.com/image-photo/learning-drawing-portrait-girl-classroom-260nw-2282092215.jpg" alt="Happy student">
+      <p>Learning with joy!</p>
+    </div>
+    <div class="student-card">
+      <img src="https://t3.ftcdn.net/jpg/09/22/26/56/360_F_922265686_pc1exCDptSzVV0U19i412loIdMeeSnYC.jpg" alt="Creative student">
+      <p>Exploring creativity</p>
+    </div>
+    <div class="student-card">
+      <img src="https://www.shutterstock.com/image-photo/indian-small-girl-drawing-painting-260nw-1539119606.jpg" alt="Engaged student">
+      <p>Growing with values</p>
+    </div>
+    <div class="student-card">
+      <img src="https://www.shutterstock.com/image-photo/indian-small-girl-drawing-painting-260nw-1539119606.jpg" alt="Engaged student">
+      <p>Growing with values</p>
+    </div>
+  </div>
+</section>
+<!-- fun facts -->
+<div class="fun-facts">
+  <div><h3 id="students">0</h3><p>Happy Students</p></div>
+  <div><h3 id="teachers">0</h3><p>Qualified Teachers</p></div>
+  <div><h3 id="achievements">0</h3><p>Olympiad Winners</p></div>
+
+</div>
+
+<!-- student fun zone -->
+<section class="fun-zone">
+  <h2>🎉 Student Fun Zone</h2>
+
+  <div class="student-highlight">
+    <img src="https://img.freepik.com/premium-photo/smiling-little-student-girl-with-many-books-school_114309-193.jpg" alt="Student of the Week">
+    <h3>👧 Ananya Sharma (Class 4)</h3>
+    <p>💫 Loves painting, dancing & scoring full marks in maths! 🧮🎨</p>
+  </div>
+
+  <div class="joke-box">
+    <h3>😂 Joke of the Day</h3>
+    <p id="jokeText">Loading joke...</p>
+  </div>
+
+  <div class="fact-box">
+    <h3>💡 Did You Know?</h3>
+    <p id="factText">Loading fact...</p>
+  </div>
+</section> 
+<!--  -->
+<section class="quiz-section">
+  <h2>🎯 Fun Knowledge Quiz</h2>
+  <div id="quiz-box">
+    <p id="question">Loading question...</p>
+    <div id="options"></div>
+    <button id="next-btn">Next</button>
+    <div id="score-box"></div>
+  </div>
+</section>
+
+
+
+
+
+<!-- mission vision -->
+
+<section id="mission-vision" class="mission-section">
+  <h2>🎯 Our Mission & Vision</h2>
+  <div class="mission-cards">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To nurture young minds through love, care, and play-based learning to become confident and responsible individuals.</p>
+    </div>
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To become a leading early education institute focused on creativity, values, and academic excellence for every child.</p>
+    </div>
+    
+</section>
+
+<!-- courses -->
+
+<section id="courses" class="courses-section">
+  <h2>📚 Courses Available</h2>
+  <p>We offer a strong academic foundation from Nursery to Class 12th for overall development.</p>
+
+  <div class="course-grid">
+    <div class="course-card">
+      <h3>👶 Nursery & KG</h3>
+      <p>Play-based learning, basic literacy, numeracy, and motor skills development.</p>
+    </div>
+    <div class="course-card">
+      <h3>📘 Classes 1 to 5</h3>
+      <p>Strong base in English, Maths, EVS, and Hindi with creative learning methods.</p>
+    </div>
+    <div class="course-card">
+      <h3>📗 Classes 6 to 8</h3>
+      <p>Skill-based learning with Science, Maths, Social Science and project-based activities.</p>
+    </div>
+    <div class="course-card">
+      <h3>📙 Classes 9 & 10</h3>
+      <p>Foundation for board exams with focus on conceptual clarity and subject depth.</p>
+    </div>
+    <div class="course-card">
+      <h3>📕 Classes 11 & 12</h3>
+      <p>Streams Available: Science, Commerce, Humanities — Taught by experienced faculty.</p>
+    </div>
+    <div class="course-card">
+      <h3>📕 Classes B.A & B.S.C</h3>
+      <p>Streams Available: Science, Commerce, Humanities — Taught by experienced faculty.</p>
+    </div>
+  </div>
+</section>
+
+<!-- fee str -->
+ <section class="fee-section">
+  <h2>Our Fee Structure</h2>
+  <p>We offer affordable and transparent fee plans for all classes.</p>
+  <div class="fee-table">
+    <div class="fee-card">
+      <h3>Nursery</h3>
+      <p><strong>Annual Fee:</strong> ₹15,000</p>
+      <p><strong>Admission Fee:</strong> ₹3,000</p>
+      <p><strong>Monthly Fee:</strong> ₹1,200</p>
+    </div>
+    <div class="fee-card">
+      <h3>Primary (Class 1-5)</h3>
+      <p><strong>Annual Fee:</strong> ₹18,000</p>
+      <p><strong>Admission Fee:</strong> ₹4,000</p>
+      <p><strong>Monthly Fee:</strong> ₹1,500</p>
+    </div>
+    <div class="fee-card">
+      <h3>Middle (Class 6-8)</h3>
+      <p><strong>Annual Fee:</strong> ₹20,000</p>
+      <p><strong>Admission Fee:</strong> ₹4,500</p>
+      <p><strong>Monthly Fee:</strong> ₹1,800</p>
+    </div>
+    <div class="fee-card">
+      <h3>High School (Class 9-10)</h3>
+      <p><strong>Annual Fee:</strong> ₹25,000</p>
+      <p><strong>Admission Fee:</strong> ₹5,000</p>
+      <p><strong>Monthly Fee:</strong> ₹2,200</p>
+    </div>
+    <div class="fee-card">
+      <h3>Intermediate (Class 11-12)</h3>
+      <p><strong>Annual Fee:</strong> ₹30000</p>
+      <p><strong>Admission Fee:</strong> ₹5,000</p>
+      <p><strong>Monthly Fee:</strong> ₹2,200</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- syllabus -->
+ <section id="syllabus" class="syllabus-section">
+  <h2>📘 Class-wise Syllabus</h2>
+  <div class="syllabus-grid">
+    <div class="syllabus-card">
+      <h4>Nursery - UKG</h4>
+      <ul>
+        <li>Alphabet & Numbers</li>
+        <li>Rhymes & Stories</li>
+        <li>Drawing & Craft</li>
+      </ul>
+    </div>
+    <div class="syllabus-card">
+      <h4>Class 1 - 5</h4>
+      <ul>
+        <li>English, Hindi, Math</li>
+        <li>EVS, Computer</li>
+        <li>Drawing, Moral Science</li>
+      </ul>
+    </div>
+    <div class="syllabus-card">
+      <h4>Class 6 - 8</h4>
+      <ul>
+        <li>English, Hindi, Math, Science</li>
+        <li>Social Science, GK</li>
+        <li>Computer & Value Education</li>
+      </ul>
+    </div>
+    <div class="syllabus-card">
+      <h4>Class 9 - 10</h4>
+      <ul>
+        <li>Math, Science, English</li>
+        <li>Hindi, SST</li>
+        <li>ICT & Projects</li>
+      </ul>
+    </div>
+    <div class="syllabus-card">
+      <h4>Class 11 - 12</h4>
+      <ul>
+        <li>Science: PCM / PCB</li>
+        <li>Commerce: Accounts, BST, Eco</li>
+        <li>Arts: History, Pol. Sci., Geo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- achievements -->
+
+<section id="achievements" class="achievements-section">
+  <h2>🌟 Our Achievements</h2>
+  <div class="achievements-grid">
+
+    <div class="achievement-card">
+      <img src="https://kidsage.in/wp-content/uploads/2024/03/webpage-logoSCHOOL-AWARDS-2-1024x707.png" alt="Best Play School Award">
+      <h3>🏆 Best Play School Award - 2024</h3>
+      <p>Recognized as the top play school for excellence in early education by the State Education Board.</p>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://cedrindia.com/wp-content/uploads/2023/06/IMG-20230504-WA0006.jpg" alt="Drawing Competition">
+      <h3>🎨 State-Level Drawing Winner</h3>
+      <p>Our talented students bagged 1st prize in the state-level art competition held in Dehradun.</p>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://png.pngtree.com/png-clipart/20220222/original/pngtree-100-percent-satisfaction-guarantee-badge-png-image_7303730.png" alt="Parent Satisfaction">
+      <h3>📚 100% Parent Satisfaction</h3>
+      <p>We are proud to maintain full satisfaction through trust, care, and personalized attention.</p>
+    </div>
+<div class="achievement-card">
+      <img src="https://static.wixstatic.com/media/a1e1f8_e5c1885c6d9a4befa18840b8b7d7cb19~mv2.jpg/v1/fill/w_568,h_852,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a1e1f8_e5c1885c6d9a4befa18840b8b7d7cb19~mv2.jpg" alt="Parent Satisfaction">
+      <h3>🏅 Inter-School Science Quiz Champions</h3>
+      <p>Our brilliant students secured the 1st position in the Inter-School Science Quiz held at the District Level.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- results -->
+ <section class="result-section">
+  <h2>🎓 Top Student Results</h2>
+  <div class="result-container">
+    
+    <div class="student-card">
+      <img src="yash singh.jpg" alt="Student 1">
+      <h3>Yash singh</h3>
+      <p>Class 4</p>
+      <div class="percentage-bar">
+        <div class="fill" data-percent="92%"></div>
+      </div>
+      <span class="percent-label">92%</span>
+    </div>
+
+    <div class="student-card">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/033/837/660/small/happy-school-pupil-asian-boy-in-glasses-on-isolated-on-studio-background-with-copy-space-back-to-school-ai-generative-photo.jpeg" alt="Student 2">
+      <h3>Naman singh</h3>
+      <p>Class 5</p>
+      <div class="percentage-bar">
+        <div class="fill" data-percent="89%"></div>
+      </div>
+      <span class="percent-label">85%</span>
+    </div>
+
+    <div class="student-card">
+      <img src="piyush.jpg" alt="Student 2">
+      <h3>Peeyush tiwari</h3>
+      <p>Class 10</p>
+      <div class="percentage-bar">
+        <div class="fill" data-percent="89%"></div>
+      </div>
+      <span class="percent-label">88%</span>
+    </div>
+
+    <div class="student-card">
+      <img src="https://c8.alamy.com/comp/KX3678/1-indian-school-little-boy-student-showing-book-in-library-smiling-KX3678.jpg" alt="Student 2">
+      <h3>Akhil singh</h3>
+      <p>Class 12</p>
+      <div class="percentage-bar">
+        <div class="fill" data-percent="89%"></div>
+      </div>
+      <span class="percent-label">89%</span>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- gallery -->
+
+<section id="gallery" class="gallery-section">
+  <h2>🖼️ School Photo Gallery</h2>
+  <p>Glimpse of joyful learning at Sanskriti Playway!</p>
+
+
+  <div class="gallery-grid">
+  <div class="gallery-item">
+    <img src="https://i0.wp.com/teacher-for-inclusion.com/wp-content/uploads/2022/04/classroom-activities-1.png?resize=744%2C418&ssl=1" alt="Classroom activities">
+    <p>Classroom Activities</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qOatYs_paNLnm-NGkFJDZvOZz9s_9_Ac-g&s" alt="Sports Day">
+    <p>Sports Day</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://www.geniusschool.edu.in/UploadImages/ServiceGallery/62983eec9b610_image2988_1575x1050.jpg" alt="Annual Function">
+    <p>Annual Function</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPdtbINEu8jQ178F6SxYbeCr3u6WaaYHUaFw&s" alt="Smart Class">
+    <p>Smart Class</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://occupationaltherapy.com.au/wp-content/uploads/2024/06/AdobeStock_589500717-min-scaled.jpeg" alt="Art & Craft">
+    <p>Art & Craft</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://i0.wp.com/adwaityoga.com/wp-content/uploads/2022/08/b16388e3300a6fa5552a2fae5a44923f.jpg?fit=500%2C558&ssl=1" alt="Library">
+    <p>Yoga & Meditation</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://live.staticflickr.com/65535/48861475181_f82ac229bf_z.jpg" alt="Library">
+    <p>Library</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://i.etsystatic.com/19909259/r/il/8db00a/4258764565/il_fullxfull.4258764565_dj16.jpg" alt="Library">
+    <p>Computer Lab Exploration</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="https://surajschoolgurgaon.com/images/resource/products/dance.jpg" alt="Library">
+    <p>Dance & Music Class</p>
+  </div>
+  <div class="gallery-item">
+    <img src="https://nalandaschool.org/wp-content/uploads/2022/03/Tips-to-Prepare-your-Child-for-an-Exciting-Field-Trip.jpg" alt="Library">
+    <p>Educational Field Trips</p>
+  </div>
+</div>
+
+  
+
+<!-- manager -->
+
+<section id="manager" class="manager-section">
+  <div class="manager-container">
+    <div class="manager-photo">
+      <img src="manager.jpg" alt="Aman Singh - College Manager">
+    </div>
+    <div class="manager-info">
+      <h2>🏫 Meet Our College Manager</h2>
+      <h3>Mr. Aman Singh</h3>
+      <h4><span>B.Sc</span> | <span>M.Sc</span> | <span>Ph.D</span></h4>
+      <p>
+        With over a decade of experience in educational leadership, Mr. Aman Singh has been a guiding light for both students and faculty.
+        His academic journey from B.Sc to Ph.D. reflects his passion for knowledge and his commitment to excellence in education.
+      </p>
+      <p>
+        Under his visionary management, Sanskriti Playway English School has achieved new milestones in discipline, innovation, and academic growth.
+        He truly believes in nurturing young minds with care, creativity, and curiosity.
+      </p>
+    </div>
+  </div>
+</sectio>
+
+<!-- admission -->
+
+   <section id="admission" class="admission-section">
+  <div class="admission-container">
+    <h2>Admission Open – 2025-26</h2>
+    <p>
+      Sanskriti Playway English School is now inviting applications for admission from 
+      <strong>Nursery to Grade 5</strong>. Our aim is to build a strong academic foundation with a playful learning 
+      environment, guided by qualified and caring teachers.
+    </p>
+    <p>
+      We provide a nurturing and secure atmosphere where every child gets the opportunity to explore, create, and grow.
+      Visit our school campus from <strong>9:00 AM to 2:00 PM (Monday to Saturday)</strong> or get in touch with our 
+      admission team to learn more.
+    </p>
+    <p>
+      Limited seats available! Secure your child’s future today.
+    </p>
+     <button onclick="alert('Call us at: +91-8887780204')">📞 Call for Admission</button> 
+  
+   
+</div> 
+  </div>
+  </section> 
+<!-- timetable -->
+  <section id="timetable" class="admission-section">
+  <div class="admission-container">
+    <h2>📚 Weekly Class Timetable</h2>
+    <div class="timetable-container">
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Math</th>
+            <th>English</th>
+            <th>EVS</th>
+            <th>Games</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>9:00 -9:45</td>
+            <td>9:45 - 10:30</td>
+            <td>10:45 -11:30</td>
+            <td>11:30- 12:15</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>9:00 - 9:45</td>
+            <td>9:45 - 10:30</td>
+            <td>10:45 - 11:30</td>
+            <td>11:30 - 12:15</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>9:00 - 9:45</td>
+            <td>9:45 -10:30</td>
+            <td>10:45 - 11:30</td>
+            <td>11:30 -12:15</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>9:00 - 9:45</td>
+            <td>9:45 - 10:30</td>
+            <td>10:45 - 11:30</td>
+            <td>11:30 -12:15</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>9:00 -9:45</td>
+            <td>9:45- 10:30</td>
+            <td>10:45 - 11:30</td>
+            <td>11:30 - 12:15</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Sports</td>
+            <td>Drawing</td>
+            <td>Craft</td>
+            <td>Fun Activities</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<!-- teachers -->
+
+ <section id="teachers" class="teachers-section">
+  <h2>👩‍🏫 Meet Our Teachers</h2>
+  <p class="section-subtitle">Our dedicated and passionate teachers nurture students with care, creativity, and commitment.</p>
+
+  <div class="teacher-grid">
+
+    <div class="teacher-card">
+      <img src="teacher.jpg" alt="Mr. Peeyush Tiwari">
+      <h3>Mr. Peeyush Tiwari</h3>
+      <p>Nursery Teacher</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="teacher2.jpg" alt="Mr. Aman Singh">
+      <h3>Mr. Aman Singh</h3>
+      <p>Math & Science</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="teacher.jpg" alt="Mr. Vikas Singh">
+      <h3>Mr. Vikas Singh</h3>
+      <p>English & Arts</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="manager.jpg" alt="Mr. Rajeev Mehra">
+      <h3>Mr. Parmar sir</h3>
+      <p>Math & Science</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- why choose us -->
+
+  <section id="why-choose-us" class="choose-section">
+  <h2>🌈 Why Choose Sanskriti Playway?</h2>
+  <div class="choose-grid">
+
+    <div class="choose-card">
+      <img src="https://cdn4.vectorstock.com/i/1000x1000/81/88/hands-holding-planet-earth-caring-for-environment-vector-44688188.jpg" alt="Caring Environment">
+      <h3>❤️ Caring Environment</h3>
+      <p>We provide a warm, loving, and secure space where each child is treated with individual attention and care.</p>
+    </div>
+
+    <div class="choose-card">
+      <img src="https://skoolofcode.us/wp-content/uploads/2021/06/summer-math-activity-by-young-boy-scaled.jpg" alt="Fun Activities">
+      <h3>🎲 Engaging Activities</h3>
+      <p>Interactive games, music, dance, and creative arts keep children excited about learning every day.</p>
+    </div>
+
+    <div class="choose-card">
+      <img src="https://strategyeducation.co.uk/wp-content/uploads/2021/08/Advice-for-Newly-Qualified-Teachers.jpg" alt="Qualified Teachers">
+      <h3>👩‍🏫 Qualified Teachers</h3>
+      <p>Our trained and compassionate educators use modern teaching techniques suited for young minds.</p>
+    </div>
+
+    <div class="choose-card">
+      <img src="https://play-lh.googleusercontent.com/kJylig0tVmqAxaiUByyiX5YMC9gyGDQ-99BdYnbWUGI2NRNOMwAu7XtmdPaXWNE_8hs" alt="Safe Campus">
+      <h3>🛡️ Safe Campus</h3>
+      <p>24/7 CCTV monitoring, secure entry/exit points, and a child-friendly setup ensure full safety.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- parents review -->
+
+<section id="testimonials" class="testimonial-section">
+  <h2>💬 What Parents Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Sanskriti Playway has transformed my child! Caring teachers and creative learning."</p>
+      <h4>- Rajan singh, Parent</h4>
+    </div>
+    
+    <div class="testimonial-card">
+  <p>"Excellent staff and clean environment. My daughter loves going to school every day!"</p>
+  <h4>- Ashok Singhs, Parent</h4>
+</div>
+
+  </div>
+</section>
+
+<!-- faq -->
+
+<section id="faq" class="faq-section">
+  <h2> Frequently Asked Questions ❓</h2>
+  <div class="faq-item">
+    <h4>What is the admission age for Nursery?</h4>
+    <p>Minimum age is 3 years.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Are school buses available?</h4>
+    <p>Yes, we provide transport across major areas.</p>
+  </div>
+  <div class="faq-item">
+    <h4> What are the school timings?</h4>
+    <p>The school timings are 8:00 AM to 1:30 PM (Monday to Saturday). For Play Group and Nursery, timings are 9:00 AM to 12:00 PM..</p>
+  </div>
+  <div class="faq-item">
+    <h4> Are extra-curricular activities offered?</h4>
+    <p>Yes, we offer music, dance, art & craft, yoga, sports, and more to ensure holistic development of every student.</p>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="contact-section">
+  <h2>📞 Contact Us</h2>
+  <p>Have questions or want to visit? We're here to help!</p>
+
+  <div class="contact-container">
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="👤 Your Full Name" required>
+      <input type="email" name="email" placeholder="📧 Your Email" required>
+      <input type="text" name="address" placeholder="🏠 Your Address" required>
+      <input type="tel" name="mobile" placeholder="📱 Mobile Number" required>
+      <textarea name="message" rows="4" placeholder="💬 Your Message" required></textarea>
+      <button type="submit">📨 Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>📍 School Address</h3>
+      <p>Sanskriti Playway English School,<br>
+      Near Main Market, XYZ Road,<br>
+      Uttarakhand, India</p>
+
+      <h3>📞 Call Us</h3>
+      <p>+91-8887780204</p>
+
+      <h3>📧 Email</h3>
+      <p>info@sanskritiplayway.edu.in</p>
+    </div>
+  </div>
+</section>
+<section id="newsletter" class="newsletter-section">
+  <h2>📩 Subscribe for Updates</h2>
+  <form>
+      <input type="email" placeholder="Enter your email">
+    <button type="submit">Subscribe  <i class="fas fa-paper-plane"></i></button>
+  </form>
+</section>
+
+<!-- footer -->
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img src="logo.jpg" alt="School Logo" class="footer-logo" />
+      <h3>Sanskriti Playway English School</h3>
+      <p>We focus on nurturing children emotionally, socially, and intellectually through creative and value-based learning.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#admission">Admission</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:school@example.com">Email us</a></li>
+          <li><a href="#">Talk to a counsellor</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sanskriti Playway English School. All rights reserved. Developed by Peeyush tiwari</p>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
