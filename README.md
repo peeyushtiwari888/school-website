@@ -84,6 +84,7 @@ Sanskriti-School-Website/
 │   └── screenshot5.png
 └── README.md
 ```
+---
 📈 Future Improvements
 
 🔐 Login system for Parents & Teachers
@@ -93,6 +94,7 @@ Sanskriti-School-Website/
 📝 Online admission form
 
 🌍 Backend integration
+
 
 ---
 👤 Author
